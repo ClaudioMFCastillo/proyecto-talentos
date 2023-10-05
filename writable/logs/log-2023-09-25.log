@@ -1,0 +1,36 @@
+CRITICAL - 2023-09-25 00:10:52 --> mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given
+in APPPATH\Views\back\usuario\editar_usuarios.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given', 'C:\\xampp\\htdocs\\primer_proyecto2\\app\\Views\\back\\usuario\\editar_usuarios.php', 29, [...])
+ 2 APPPATH\Views\back\usuario\editar_usuarios.php(29): mysqli_fetch_assoc(false)
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\primer_proyecto2\\app\\Views\\back\\usuario\\editar_usuarios.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('back/usuario/editar_usuarios', [], true)
+ 6 APPPATH\Controllers\Home.php(46): view('back/usuario/editar_usuarios')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->editar_usuarios()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 00:17:37 --> mysqli_fetch_assoc() expects exactly 1 parameter, 2 given
+in APPPATH\Views\back\usuario\editar_usuarios.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli_fetch_assoc() expects exactly 1 parameter, 2 given', 'C:\\xampp\\htdocs\\primer_proyecto2\\app\\Views\\back\\usuario\\editar_usuarios.php', 31, [...])
+ 2 APPPATH\Views\back\usuario\editar_usuarios.php(31): mysqli_fetch_assoc(Object(mysqli_result), Object(mysqli_result))
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\primer_proyecto2\\app\\Views\\back\\usuario\\editar_usuarios.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('back/usuario/editar_usuarios', [], true)
+ 6 APPPATH\Controllers\Home.php(46): view('back/usuario/editar_usuarios')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->editar_usuarios()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 00:21:05 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 266354688 bytes)
+in APPPATH\Views\back\usuario\editar_usuarios.php on line 33.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-25 01:24:13 --> Invalid file: "front/nav_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('front/nav_view.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('front/nav_view', [], true)
+ 3 APPPATH\Controllers\usuario_controller.php(31): view('front/nav_view')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\usuario_controller->formValidation()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuario_controller))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
